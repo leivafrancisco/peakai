@@ -134,7 +134,7 @@ export default function Nearshore() {
                   <div className="w-4 h-4 bg-forest-400 rounded-full animate-pulse animation-delay-300" />
                   <div className="absolute left-6 top-0 bg-slate-900 px-3 py-2 rounded-lg whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity">
                     <span className="text-white text-sm font-medium">
-                      Argentina
+                      Corrientes, Argentina
                     </span>
                   </div>
                 </div>

@@ -1,8 +1,11 @@
 import Navigation from "@/components/Navigation";
 import Hero from "@/components/Hero";
+import Agents from "@/components/Agents";
+import ServicesSection from "@/components/ServicesSection";
+import Industries from "@/components/Industries";
+import HowItWorks from "@/components/HowItWorks";
+import Integrations from "@/components/Integrations";
 import WhyUs from "@/components/WhyUs";
-import Services from "@/components/Services";
-import Nearshore from "@/components/Nearshore";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 
@@ -11,9 +14,12 @@ export default function Home() {
     <main>
       <Navigation />
       <Hero />
-      <Services />
+      <Agents />
+      <ServicesSection />
+      <Industries />
+      <HowItWorks />
+      <Integrations />
       <WhyUs />
-      <Nearshore />
       <Contact />
       <Footer />
     </main>
