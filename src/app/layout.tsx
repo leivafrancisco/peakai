@@ -6,6 +6,12 @@ export const metadata: Metadata = {
   title: "Peak Automations | Agentes de IA para Negocios",
   description:
     "Automatiza llamadas, chat y captación de leads con agentes de IA que trabajan 24/7. Ketchum, Idaho & Corrientes, Argentina.",
+  icons: {
+    icon: [
+      { url: "/favicon.svg", type: "image/svg+xml" },
+    ],
+    shortcut: "/favicon.svg",
+  },
 };
 
 export default function RootLayout({
