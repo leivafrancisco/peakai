@@ -73,8 +73,8 @@ const reels: { id: number; embedUrl?: string; title: { es: string; en: string } 
     embedUrl: "https://www.instagram.com/reel/DXFfxRdkYf6/embed/",
     title: { es: "Reel 1", en: "Reel 1" },
   },
-  { id: 2, title: { es: "Demo: Agente de Llamadas", en: "Demo: Call Agent" } },
-  { id: 3, title: { es: "Automatiza tu negocio en 5 días", en: "Automate your business in 5 days" } },
+  { id: 2, embedUrl: "https://www.instagram.com/reel/DXNf96RE02Q/embed/", title: { es: "Demo: Agente de Llamadas", en: "Demo: Call Agent" } },
+  { id: 3, embedUrl: "https://www.instagram.com/reel/DXKtiDbFTKQ/embed/", title: { es: "Documentos Legales a Bases de datos Vectorial", en: "Legal Documents to Vector Database" } },
 ];
 
 const containerVariants = {
@@ -398,7 +398,7 @@ export default function WhyUs() {
               {
                 icon: <InstagramIcon />,
                 label: "@peakautomations",
-                href: "https://instagram.com/peakautomations",
+                href: "https://www.instagram.com/peakai.es/reels/",
                 color: "#f472b6",
                 bg: "rgba(236,72,153,0.06)",
                 border: "rgba(236,72,153,0.2)",
