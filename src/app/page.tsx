@@ -1,6 +1,7 @@
 import Navigation from "@/components/Navigation";
 import Hero from "@/components/Hero";
 import Agents from "@/components/Agents";
+import SuccessCases from "@/components/SuccessCases";
 import ServicesSection from "@/components/ServicesSection";
 import Industries from "@/components/Industries";
 import HowItWorks from "@/components/HowItWorks";
@@ -15,6 +16,7 @@ export default function Home() {
       <Navigation />
       <Hero />
       <Agents />
+      <SuccessCases />
       <ServicesSection />
       <Industries />
       <HowItWorks />
