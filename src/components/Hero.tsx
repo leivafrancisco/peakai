@@ -4,6 +4,7 @@ import { motion, type Easing } from "framer-motion";
 import { useLang } from "@/context/LanguageContext";
 import { i18n, tr } from "@/i18n/translations";
 import NumberTicker from "@/components/ui/NumberTicker";
+import DemoCallWidget from "@/components/DemoCallWidget";
 
 const EASE: Easing = [0.22, 1, 0.36, 1];
 
@@ -140,42 +141,8 @@ export default function Hero() {
           {t(i18n.hero.subhead)}
         </motion.p>
 
-        {/* CTA Buttons */}
-        <motion.div
-          {...fadeUp(0.5)}
-          className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16"
-        >
-          <motion.a
-            href="#contact"
-            className="shimmer-btn w-full sm:w-auto text-white px-8 py-4 rounded-xl text-lg font-bold"
-            style={{
-              background: "linear-gradient(135deg, #00F5C4, #0077FF)",
-              boxShadow: "0 0 40px rgba(0,245,196,0.3)",
-            }}
-            whileHover={{ scale: 1.03, boxShadow: "0 0 60px rgba(0,245,196,0.5)" }}
-            whileTap={{ scale: 0.97 }}
-            transition={{ type: "spring", stiffness: 400, damping: 20 }}
-          >
-            {t(i18n.hero.cta1)}
-          </motion.a>
-          <motion.a
-            href="#how-it-works"
-            className="w-full sm:w-auto flex items-center justify-center gap-2 text-white px-8 py-4 rounded-xl text-lg font-semibold border"
-            style={{ borderColor: "rgba(255,255,255,0.18)", background: "rgba(255,255,255,0.08)" }}
-            whileHover={{
-              borderColor: "rgba(255,255,255,0.35)",
-              background: "rgba(255,255,255,0.14)",
-              scale: 1.02,
-            }}
-            whileTap={{ scale: 0.97 }}
-            transition={{ type: "spring", stiffness: 400, damping: 20 }}
-          >
-            {t(i18n.hero.cta2)}
-            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
-            </svg>
-          </motion.a>
-        </motion.div>
+        {/* Demo call widget */}
+        <DemoCallWidget />
 
         {/* Stats */}
         <motion.div
