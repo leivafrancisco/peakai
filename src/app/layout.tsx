@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { LanguageProvider } from "@/context/LanguageContext";
+import ChatWidget from "@/components/ChatWidget";
 
 export const metadata: Metadata = {
   title: "Peak Automations | Agentes de IA para Negocios",
@@ -22,7 +23,10 @@ export default function RootLayout({
   return (
     <html lang="es">
       <body className="antialiased">
-        <LanguageProvider>{children}</LanguageProvider>
+        <LanguageProvider>
+          {children}
+          <ChatWidget />
+        </LanguageProvider>
       </body>
     </html>
   );
