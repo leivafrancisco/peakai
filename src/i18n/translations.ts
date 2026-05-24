@@ -250,7 +250,7 @@ export const i18n = {
         degree: { es: "Analista en Sistemas", en: "Systems Analyst" },
         location: "Corrientes, Argentina",
         initials: "IG",
-        photo: "",
+        photo: "/team-ignacio.jpg",
         color: "#0077FF",
         bio: {
           es: "Enfocado en estrategia de producto, relaciones con clientes y escalabilidad de soluciones de IA para mercados de habla hispana.",
