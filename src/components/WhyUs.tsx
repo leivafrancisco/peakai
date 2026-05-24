@@ -389,15 +389,15 @@ export default function WhyUs() {
             {[
               {
                 icon: <TikTokIcon />,
-                label: "@peakautomations",
-                href: "https://tiktok.com/@peakautomations",
+                label: "@peakai.es",
+                href: "https://tiktok.com/@peakai.es",
                 color: "#ffffff",
                 bg: "rgba(255,255,255,0.06)",
                 border: "rgba(255,255,255,0.12)",
               },
               {
                 icon: <InstagramIcon />,
-                label: "@peakautomations",
+                label: "@peakai.es",
                 href: "https://www.instagram.com/peakai.es/reels/",
                 color: "#f472b6",
                 bg: "rgba(236,72,153,0.06)",
