@@ -239,8 +239,8 @@ export const i18n = {
         },
         socials: {
           linkedin: "https://linkedin.com/in/franciscoleiva",
-          instagram: "https://instagram.com/franciscoleiva",
-          tiktok: "https://tiktok.com/@franciscoleiva",
+          instagram: "https://www.instagram.com/peakai.es/",
+          tiktok: "https://tiktok.com/@peakai.es",
         },
       },
       {
@@ -258,8 +258,8 @@ export const i18n = {
         },
         socials: {
           linkedin: "https://linkedin.com/in/ignaciogauto",
-          instagram: "https://instagram.com/ignaciogauto",
-          tiktok: "https://tiktok.com/@ignaciogauto",
+          instagram: "https://www.instagram.com/peakai.es/",
+          tiktok: "https://tiktok.com/@peakai.es",
         },
       },
     ],
