@@ -2,14 +2,28 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&display=swap');
+
+/* ── Design system tokens ──────────────────────────────────── */
+:root {
+  --brand-primary:    #0077FF;
+  --brand-mint:       #00F5C4;
+  --brand-navy:       #080E1A;
+  --font-sans:        'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --shadow-lg:        0 10px 15px -3px rgba(0,119,255,0.10), 0 4px 6px -4px rgba(0,119,255,0.05);
+  --shadow-xl:        0 20px 25px -5px rgba(0,119,255,0.15), 0 8px 10px -6px rgba(0,119,255,0.08);
+  --shadow-cta:       0 10px 25px -5px rgba(0,119,255,0.25);
+}
 
 html {
   scroll-behavior: smooth;
 }
 
 body {
-  font-family: 'Syne', 'Inter', system-ui, sans-serif;
+  font-family: var(--font-sans);
+  font-feature-settings: 'cv11', 'ss01';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   background-color: #080E1A;
   color: white;
 }
@@ -18,6 +32,36 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+
+  /* Design system — mint underline accent for inline emphasis */
+  .brand-highlight {
+    color: var(--brand-primary);
+    text-decoration: underline;
+    text-decoration-color: var(--brand-mint);
+    text-decoration-thickness: 4px;
+    text-underline-offset: 4px;
+  }
+
+  /* Design system — mint bar below section headings */
+  .brand-underline::after {
+    content: '';
+    display: block;
+    width: 64px;
+    height: 4px;
+    background: var(--brand-mint);
+    border-radius: 9999px;
+    margin: 14px auto 0;
+  }
+
+  /* Eyebrow label — ALL CAPS mint on dark */
+  .eyebrow {
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: var(--brand-mint);
+  }
+
   .gradient-text {
     background: linear-gradient(90deg, #00F5C4, #0077FF);
     -webkit-background-clip: text;
